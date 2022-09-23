@@ -1,0 +1,280 @@
+/*====================================
+common css
+=====================================*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    color: #666666;
+    font-family: Georgia;
+    font-size: 16px;
+    line-height: 1.5em;
+    background-color: aliceblue;
+    
+    
+
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/*====================================
+top header
+=====================================*/
+.header-area{
+    width: 100%;
+    clear: both;
+    margin: 0 auto;
+   
+    
+}
+#top-header-area{
+   background-color: #ba2e1f; 
+   width: 100%;
+   padding: 15px 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+
+}
+.mini-manu{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+    text-align: center;
+    
+   
+ 
+  
+   }
+   .mini-manu li{
+    position:relative;
+    
+    
+   }
+   .mini-manu li a{
+    color:#fff;
+    display: block;
+    font-size: 14px;
+    
+    
+    
+   }
+   .mini-manu li:hover {
+    background-color:rgb(35, 189, 8);
+    transition: 0.3s ease;
+   }
+   .mini-manu li::after{
+     background: #fff;
+     content: "";
+     position: absolute;
+     top: 5px;
+     right: -6px;
+     height: 12px;
+     width: 1px;
+   }
+   .mini-manu li:last-child:after{
+   display: none;
+  }
+  .search-area{
+    
+    height: 20px;
+  }
+ 
+  .search-area form{
+    display: flex;
+    background:#fff;
+    border-radius: 25px;
+    width: 230px;
+    height: 100%;
+    position: relative;
+  }
+ 
+  .search-area input{
+    display: flex;
+    align-items: center;
+    height: 20px;
+    border: none;
+    outline: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+
+    width: 89%;
+    color: #000;
+    padding: 0 5px;
+    
+  }
+
+  .search-area input[type="submit"]{
+    background-image:url(img/search.png);
+     background-repeat: no-repeat;
+     background-position: right;
+     width: 8%;
+     display: flex;
+     align-items: center;
+   
+    
+     background-color:white;
+     height: 20px;
+    
+   
+  }
+  .top-center{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+
+  }
+  .top-center-right{
+   width: 100%;
+   
+  }
+  .social-media-area{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    
+  }
+  .social-media-area li{
+    margin-left: 15px;
+    
+  }
+  .social-media-area li a{
+    display: block;
+    text-decoration: none;
+  }
+  .social-media-area li a i{
+    background:#333333;
+    border-radius: 50px;
+    display: block;
+    text-decoration: none;
+    width: 35px;
+    padding-top: 5px;
+    color: #fff;
+    height: 25px;
+    text-align: center;
+   
+  }
+  .social-media-area li a :hover{
+    background:#ba2e1f;
+    border-radius: 50px;
+    display: block;
+    text-decoration: none;
+    width: 35px;
+    padding-top: 5px;
+    color: #fff;
+    height: 25px;
+    text-align: center;
+   
+  }
+  .header-bottom{
+    width: 100%;
+    padding: 0 20px;
+
+  }
+  .main-manu{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content:space-between;
+    gap: 20px;
+    background-color: #333333;
+    height: 60px;
+    padding: 0 5px;
+   
+   
+  }
+  .main-manu li a{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+  
+
+  }
+  .main-manu li {
+    padding: 0;
+    margin: 0;
+    position: relative;
+  
+
+  }
+  .main-manu li:hover{
+    padding: 5px;
+    margin: 0;
+    background-color: #ba2e1f;
+    
+
+  }
+  .main-manu li ul{
+    position: absolute;
+   
+    background: #ba2e1f;
+    left: -999999px;
+    top: 30px;
+    padding:0 15px;
+    width: 100px;
+
+  }  
+  .main-manu li:hover > ul{
+    
+    position: absolute;
+    
+    background: #ba2e1f;
+    left:30px;
+    top: 30px;
+    padding:0 15px;
+    width: 100px;
+
+  }
+ 
+  /* .main-manu ul :hover{
+    position: absolute;
+    display: block;
+    background: #ba2e1f;
+    left: 30px;
+    top: 30px;
+    padding:0 15px;
+    width: 100px;
+
+  }    */
+  .main-manu  ul ul{
+    position: absolute;
+    display: none;
+    background: #ba2e1f;
+    left:85px;
+    top: 0px;
+    padding: 0 15px;
+    width: 100px;
+    
+
+  }  
+   .main-manu ul li:hover > ul{
+    position: absolute;
+    display: block;
+    background: #ba2e1f;
+    left: 85px;
+    top: 0px;
+    padding: 0 15px;
+    width: 100px;
+    
+
+  }   
+   
+       
+ 
+ 
+
